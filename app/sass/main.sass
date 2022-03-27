@@ -1,0 +1,88 @@
+@import config
+
+body
+  display: flex
+  width: 100%
+  min-height: 99vh
+  background-image: url(../images/background.jpg)
+  background-position: center
+
+.container
+  position: relative
+  width: 90vmin
+  //width: 100%
+  height: 76vmin
+  margin: auto
+  outline: 2px solid red
+
+.item
+  position: absolute
+  top: 0
+  left: 50%
+  width: 14.5vmin
+  perspective: 1000px
+
+.one
+  transform: translate(-50%, 0%)
+
+.two
+  transform: translate(-50%, 50%)
+
+.three
+  transform: translate(-50%, 100%)
+
+.four
+  transform: translate(-50%, 150%)
+
+.five
+  transform: translate(-50%, 200%)
+
+.six
+  transform: translate(-102%, 250%)
+
+.seven
+  transform: translate(-206%, 250%)
+
+.eight
+  transform: translate(-310%, 250%)
+
+.nine
+  transform: translate(2%, 250%)
+
+.ten
+  transform: translate(106%, 250%)
+
+.eleven
+  transform: translate(210%, 250%)
+
+.twelve
+  transform: translate(-50%, 360%)
+
+.item-bgi
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  border-radius: 1.5vmin
+  background-image: url(../images/background-card.jpg)
+  background-size: contain
+  background-position: center
+  backface-visibility: hidden
+  transform: rotateY(180deg)
+  transition: 1s
+
+.thirteen
+  //transform: translate(330%, 0%)
+  transition: 1s
+  backface-visibility: hidden
+
+.container:hover .thirteen
+  transform: rotateY(180deg)
+
+.container:hover .item-bgi
+  transform: rotateY(360deg)
+
+
+
+@import media
