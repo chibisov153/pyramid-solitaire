@@ -1,0 +1,73 @@
+@import config
+
+body
+  display: flex
+  width: 100%
+  min-height: 99vh
+  background-image: url(../images/background.jpg)
+  background-position: center
+
+.container
+  position: relative
+  width: 90vmin
+  //width: 100%
+  height: 76vmin
+  margin: auto
+  outline: 2px solid red
+
+.item
+  position: absolute
+  top: 0
+  left: 50%
+  width: 14.5vmin
+  perspective: 1000px
+  transform: translate(-430%, 0%)
+  //transition: .4s
+
+//.th
+  transform: translate(330%, 0%)
+
+.item-bgi
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  border-radius: 1.5vmin
+  background-image: url(../images/background-card.jpg)
+  background-size: contain
+  background-position: center
+  backface-visibility: hidden
+  //transform: rotateY(180deg)
+  transition: .4s
+
+.item-front
+  transform: rotateY(180deg)
+  transition: .4s
+  backface-visibility: hidden
+
+.item-rotate .item-front
+  transform: rotateY(360deg)
+
+.item-rotate .item-bgi
+  transform: rotateY(180deg)
+
+//.item-set
+  transform: translate(-322%, 0%)
+  //transition: .4s
+
+.item-end
+  position: absolute
+  width: 40px
+  height: 40px
+  top: 30px
+  left: 100px
+
+.play-button
+  position: fixed
+  top: 30px
+  left: 30px
+
+
+
+@import media
